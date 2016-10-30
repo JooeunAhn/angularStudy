@@ -4,8 +4,12 @@
     <meta charset="utf-8">
     <title>Angular 1.5</title>
     <script type="text/javascript" src="./js/angular.min.js"></script>
-    <script type="text/javascript" src="./js/app/app.config.js"></script>
     <script type="text/javascript" src="./js/app/app.module.js"></script>
+    <script type="text/javascript" src="./js/app/app.config.js"></script>
+    <script type="text/javascript" src="./js/app/blog-list/blog-list.module.js"></script>
+    <script type="text/javascript" src="./js/app/blog-list/blog-list.component.js"></script>
+
+
 <style type="text/css">
     .new-class {
         font-size: 500px;
@@ -19,11 +23,6 @@
 </style>
 </head>
 <body>
-    <h1 class='new-class' ng-class="{'other-class': name=='joon', 'new-class': font==120}">Hello,
-        <span ng-if="name">{{ name }}</span>
-        <span ng-if="!name">World</span>
-    </h1>
-    <input type="text" ng-model="name"/>
-    <input type="text" ng-model="font" placeholder="font-size" />
+    <blog-list></blog-list>
 </body>
 </html>
